@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Appbar, Divider, TextInput, List, IconButton, FAB, Text } from 'react-native-paper';
 
@@ -80,7 +80,7 @@ const Safkis : React.FC = () : React.ReactElement => {
 			<FAB style={styles.FAB} label="Lisää tilaukseen" color='black' onPress={lisaaTilaus} />
 
 			<Divider style={styles.divider} />
-
+            <ScrollView>
 			<List.Section>
 				{Array.from(tilauksetRavintoloittan).map(([ravintola, tilaukset], index) => (
 
@@ -109,6 +109,7 @@ const Safkis : React.FC = () : React.ReactElement => {
 					</List.Accordion>
 				))}
 			</List.Section>
+            </ScrollView>
 		</View>
 
 		</SafeAreaProvider>
