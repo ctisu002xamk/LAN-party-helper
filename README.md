@@ -11,7 +11,7 @@ App is built with React Native using Expo framework and React-native-paper UI co
  - Add ContextApi
  - Add AsyncStorage/other method to save the data
 
-## Funtionalities
+## Functionalities
 
 ### Randomizer
 
